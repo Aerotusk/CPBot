@@ -1,6 +1,6 @@
 /* 
-   Austin Gnecco, Danny Maas, Jessica Pearson, Saket Shanmugam
-   Program: For Four Squared Loop-the-Loop
+   Names: Austin Gnecco, Danny Maas, Jessica Pearson, Saket Shanmugam
+   Program: Project 4, For Four Squared Loop-the-Loop
    Goal: Use a for loop in order to trace a square, then pause after
    each square trance and flash the LED for three seconds.
 */
