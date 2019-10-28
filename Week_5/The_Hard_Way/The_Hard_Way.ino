@@ -29,14 +29,6 @@ void setup()
   pinMode(B2, OUTPUT);
   pinMode(led, OUTPUT);
 
-  // Set all pins to low (just in case, no clue whether this is actually necessary)
-  digitalWrite(A1, LOW);
-  digitalWrite(A2, LOW);
-  digitalWrite(B1, LOW);
-  digitalWrite(B2, LOW);
-  digitalWrite(led, LOW);
-  delay(1);
-
   // Forward
   analogWrite(A1, full_speed);
   digitalWrite(A2, LOW);
