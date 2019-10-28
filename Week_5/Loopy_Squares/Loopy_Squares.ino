@@ -1,9 +1,10 @@
 /*
-  Name: Danny Maas, Jessica Pearson, Austin Gnecco, Saket Shanmugam
-  Program: Endless Loop
+  Name: Austin Gnecco, Danny Maas, Jessica Pearson, Saket Shanmugam
+  Program: Project 3, Endless Loop
   Description: Trace a loop using functions, and have it loop it so that it runs
   indefinitely. It should pause for three seconds between each loop.
 */
+
 
 // Right motor
 const int right1 = 4;
