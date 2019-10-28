@@ -12,6 +12,7 @@ void setup()
  pinMode(motorB2, OUTPUT);
  pinMode(LED,OUTPUT);
 
+ //Repeat this four times:
  for(int i = 0;i<4;i++)
  {
   //Move Forwards
@@ -36,6 +37,8 @@ void setup()
   digitalWrite(motorB2, LOW);
   delay(100);
   }
+  
+  //Flash LED, pause for 3 seconds
   digitalWrite(LED,HIGH);
   delay(1000);
   digitalWrite(LED,LOW);
