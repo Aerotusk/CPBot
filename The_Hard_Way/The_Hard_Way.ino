@@ -1,6 +1,6 @@
 /*
-  Name: Danny Maas
-  Program: Square Driving Robot
+  Names: Danny Maas, Jessica Pearson, Austin Gnecco, Saket Shanmugam
+  Program: Project 1b, The Hard Way
   Description: Make the robot drive in a square, stop, and flash the built-in LED. Code must
   be placed inside the setup() fuction, use constants, and only the pinMode(); digitalWrite();
   analogWrite(); and delay(); commands. No new functions or loops.
@@ -15,11 +15,10 @@ const int B2 = 6;
 // Forward: A/B1 255 (or just high), A/B2 0 (or just low)
 const int led = 13;
 const int full_speed = 255;
-const int forward_time = 1500;
-const int turn_time = 500;
+const int forward_time = 1000;
+const int turn_time = 255;
 const int flash_interval = 250;
 
-// I've written more constants in this one piece of code than I have in all my other projects combined
 
 void setup()
 {
@@ -97,35 +96,6 @@ void setup()
   digitalWrite(led, HIGH);
   delay(flash_interval);
   digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
-  digitalWrite(led, HIGH);
-  delay(flash_interval);
-  digitalWrite(led, LOW);
-  delay(flash_interval);
 
   // End
 }
