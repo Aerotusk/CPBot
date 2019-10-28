@@ -1,5 +1,5 @@
 /*
-  Names: Danny Maas, Jessica Pearson, Austin Gnecco, Saket Shanmugam
+  Names: Austin Gnecco, Danny Maas, Jessica Pearson, Saket Shanmugam
   Program: Project 1b, The Hard Way
   Description: Make the robot drive in a square, stop, and flash the built-in LED. Code must
   be placed inside the setup() fuction, use constants, and only the pinMode(); digitalWrite();
