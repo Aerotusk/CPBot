@@ -1,10 +1,11 @@
 /*
-  Name: Danny Maas, Jessica Pearson, Austin Gnecco, Saket Shanmugam
-  Program: Functional Code
+  Name: Austin Gnecco, Danny Maas, Jessica Pearson, Saket Shanmugam
+  Program: Project 2, Functional Code
   Description: Trace a square using two different functions: Trace1Side() and
   PivotRight(). They should be voids with no input. Also have a flashLED() that
   calls for an integer value of how long to keep the LED on (one second)
 */
+
 
 // Right motor
 const int right1 = 4;
