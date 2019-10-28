@@ -26,15 +26,6 @@ void setup()
   pinMode(left1, OUTPUT);
   pinMode(left2, OUTPUT);
   pinMode(led, OUTPUT);
-
-  // Set all pins to low (just in case, no clue whether this is actually necessary)
-  digitalWrite(right1, LOW);
-  digitalWrite(right2, LOW);
-  digitalWrite(left1, LOW);
-  digitalWrite(left2, LOW);
-  digitalWrite(led, LOW);
-  delay(1);
-
 }
 
 
