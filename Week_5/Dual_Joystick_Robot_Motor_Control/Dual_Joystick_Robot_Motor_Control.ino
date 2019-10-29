@@ -1,5 +1,5 @@
 /* Danny Maas, Jessica Pearson, Austin Gnecco, Saket Shanmugam
-   Program: Dual Joystick Robot Motor Control
+   Program: Project 7, Dual Joystick Robot Motor Control
    Goal: Have one joystick control each side of the robot (left
    joystick controls left motor, right joystick controls right
    motor)
