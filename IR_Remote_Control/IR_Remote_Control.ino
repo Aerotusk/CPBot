@@ -29,7 +29,8 @@ int left2 = 6;
 signed int right;
 signed int left;
 signed int rightPower; //Since rightSpeed and leftSpeed get used later
-signed int leftPower;
+signed int leftPower;  //but we still need something to store left and 
+signed int power;      //right powers
 
 
 void setup()
@@ -64,74 +65,71 @@ void translateIR() //Includes case statement to have different things
   switch (results.value)
   {
     case 0xFF18E7: //Up (Move Forwards)
+      rightPower = power;
+      leftPower = power;
       Move(rightPower, leftPower);
       break;
 
-    case 0xFF10EF: //Left (Turn Left)
-      Move(-rightPower, leftPower);
+    case 0xFF10EF: //Left (Turn Left)\
+      rightPower = -power;
+      leftPower = power;
+      Move(rightPower, leftPower);
       break;
 
     case 0xFF5AA5: //Right (Turn Right)
-      Move(rightPower, -leftPower);
+      rightPower = power;
+      leftPower = -power;
+      Move(rightPower, leftPower);
       break;
 
     case 0xFF4AB5: //Down (Move Backwards)
-      Move(-rightPower, -leftPower);
+      rightPower = power;
+      leftPower = power;
+      Move(rightPower, leftPower);
       break;
 
     case 0xFF38C7: //OK (Motors at 0%)
-      rightPower = 0;
-      leftPower= 0;
+      power = 0;
       break;
 
     case 0xFFA25D: //1 (Motors at 10%)
-      rightPower = 25;
-      leftPower = 25;
+      power = 25;
       break;
 
     case 0xFF629D: //2 (Motors at 20%)
-      rightPower = 50;
-      leftPower = 50;
+      power = 50;
       break;
 
     case 0xFFE21D: //3 (Motors at 30%)
-      rightPower = 75;
-      leftPower = 75;
+      power = 75;
       break;
 
     case 0xFF22DD: //4 (Motors at 40%)
-      rightPower = 105;
-     leftPower = 105;
+      power = 105;
       break;
 
     case 0xFF02FD: //5 (Motors at 50%)
-      rightPower = 130;
-      leftPower= 130;
+      power = 130;
       break;
 
     case 0xFFC23D: //6 (Motors at 60%)
-      rightPower = 155;
-      leftPower= 155;
+      power = 155;
       break;
 
     case 0xFFE01F: //7 (Motors at 70%)
-      rightPower = 180;
-     leftPower= 180;
+      power = 180;
       break;
 
     case 0xFFA857: //8 (Motors at 80%)
-      rightPower = 205;
-      leftPower = 205;
+      power = 205;
       break;
 
     case 0xFF906F: //9 (Motors at 90%)
-      rightPower = 230;
-      leftPower = 230;
+      power = 230;
       break;
 
     case 0xFF9867: //0 (Motors at 100%)
-      rightPower = 255;
-     leftPower = 255;
+      power = 255;
       break;
 
     case 0xFFFFFFFF: //Repeat
